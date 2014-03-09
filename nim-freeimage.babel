@@ -5,6 +5,6 @@ author = "Charlie Barto"
 description = """wrapper for the FreeImage library for reading and writing image files"""
 license = "MIT"
 InstallFiles = """
-FreeImage-License.txt
+FreeImage_License.txt
 FreeImage.nim
 """
