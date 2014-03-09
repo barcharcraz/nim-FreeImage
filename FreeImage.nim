@@ -1,28 +1,30 @@
-# ==========================================================
-# FreeImage 3
+# The MIT License (MIT)
 #
-# Design and implementation by
-# - Floris van den Berg (flvdberg@wxs.nl)
-# - Hervé Drolon (drolon@infonie.fr)
+# Copyright (c) 2014 Charlie Barto
 #
-# Contributors:
-# - see changes log named 'Whatsnew.txt', see header of each .h and .cpp file
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
 #
-# This file is part of FreeImage 3
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
 #
-# COVERED CODE IS PROVIDED UNDER THIS LICENSE ON AN "AS IS" BASIS, WITHOUT WARRANTY
-# OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
-# THAT THE COVERED CODE IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE
-# OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE COVERED
-# CODE IS WITH YOU. SHOULD ANY COVERED CODE PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT
-# THE INITIAL DEVELOPER OR ANY OTHER CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
-# SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL
-# PART OF THIS LICENSE. NO USE OF ANY COVERED CODE IS AUTHORIZED HEREUNDER EXCEPT UNDER
-# THIS DISCLAIMER.
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
 #
-# Use at your own risk!
-# ==========================================================
-# Version information ------------------------------------------------------
+# This software uses the FreeImage open source image library. See http://freeimage.sourceforge.net for details.
+#
+# FreeImage is used under the FIPL, version 1.0. 
+
+
 when defined(windows):
   const FreeImageLib = "freeimage.dll"
   {.pragma: FreeImageCallconv, stdcall.}
