@@ -28,6 +28,9 @@
 when defined(windows):
   const FreeImageLib = "freeimage.dll"
   {.pragma: FreeImageCallconv, stdcall.}
+when defined(macosx):
+  const FreeImageLib = "libfreeimage.dylib"
+  {.pragma: FreeImageCallconv, cdecl.}
 else:
   const FreeImageLib = "libfreeimage.so"
   {.pragma: FreeImageCallconv, cdecl.}
