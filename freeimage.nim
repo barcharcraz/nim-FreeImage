@@ -27,7 +27,10 @@
 
 when defined(windows):
   const FreeImageLib = "freeimage.dll"
-  {.pragma: FreeImageCallconv, stdcall.}
+  when defined(static):
+    {.pragma: FreeImageCallconv, cdecl.}
+  else:
+    {.pragma: FreeImageCallconv, stdcall.}
 elif defined(macosx):
   const FreeImageLib = "libfreeimage.dylib"
   {.pragma: FreeImageCallconv, cdecl.}
