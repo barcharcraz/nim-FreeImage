@@ -27,7 +27,7 @@
 
 when defined(windows):
   const FreeImageLib = "freeimage.dll"
-  when defined(static):
+  when defined(staticlib):
     {.pragma: FreeImageCallconv, cdecl.}
   else:
     {.pragma: FreeImageCallconv, stdcall.}
