@@ -1,5 +1,5 @@
 [Package]
-name = "nim-freeimage"
+name = "freeimage"
 version = "0.1"
 author = "Charlie Barto"
 description = """wrapper for the FreeImage library for reading and writing image files"""
